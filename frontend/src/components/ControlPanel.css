@@ -1,0 +1,166 @@
+.control-panel .panel-content {
+  padding: 0;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab {
+  flex: 1;
+  padding: 0.75rem;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.tab:hover:not(:disabled) {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+}
+
+.tab.active {
+  color: var(--accent-highlight);
+  border-bottom-color: var(--accent-highlight);
+}
+
+.tab:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.tab-content {
+  padding: 1rem;
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.file-input-label.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+/* Video Progress */
+.video-progress {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.progress-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.progress-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.progress-percent {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-highlight);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.progress-bar {
+  height: 8px;
+  background: var(--bg-primary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-highlight));
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-info {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.stop-btn {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+/* Save Video Section */
+.save-video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: rgba(0, 200, 83, 0.1);
+  border: 1px solid rgba(0, 200, 83, 0.3);
+  border-radius: 8px;
+}
+
+.save-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--success);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.save-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.save-btn {
+  flex: 1;
+}
+
+.dismiss-btn {
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+}
+
+.dismiss-btn:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+.save-hint {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  word-break: break-all;
+}
+
+.btn-secondary {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background: var(--bg-primary);
+}
